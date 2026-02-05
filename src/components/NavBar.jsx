@@ -448,7 +448,7 @@ const Navbar = () => {
         stiffness: 100,
         delay: 0.1 
       }}
-      className={`fixed w-full z-50 transition-all duration-500 ease-out ${
+      className={`fixed w-full z-500 transition-all duration-500 ease-out ${
         scrolled
           ? "bg-gradient-to-b from-gray-900/95 via-gray-900/90 to-gray-900/85 backdrop-blur-xl shadow-2xl shadow-black/20 border-b border-gray-800/50"
           : "bg-gradient-to-b from-gray-900/80 to-transparent backdrop-blur-sm"

@@ -80,7 +80,7 @@ const TerminalUI = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className={`relative ${isFullscreen ? 'fixed inset-0 z-[9999] p-4 bg-gray-950' : 'w-full'}`}
+      className={`relative ${isFullscreen ? 'fixed inset-0 z-[99] p-4 bg-gray-950' : 'w-full'}`}
     >
       {/* Terminal Container */}
       <div className={`rounded-2xl overflow-hidden border border-gray-800 shadow-2xl shadow-black/50 ${isFullscreen ? 'h-full' : ''}`}>
