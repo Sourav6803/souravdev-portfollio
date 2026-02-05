@@ -4,6 +4,7 @@ import axios from "axios";
 import { motion, AnimatePresence } from "framer-motion";
 import { server } from "../../server";
 import { useNavigate } from "react-router-dom";
+import TerminalUI from "../TerminalUI";
 
 const ProjectShowcase = () => {
   const [projects, setProjects] = useState([]);
@@ -50,8 +51,13 @@ const ProjectShowcase = () => {
   }
 
   return (
-  
+  <>
+    <div className="lg:p-[70px] mb-3 h-full">
+            <TerminalUI />
+    </div>
+
     <section  className="relative p-10 overflow-hidden ">
+      
       {/* Particle background */}
       <div className="absolute inset-0 opacity-10 "> 
         {[...Array(20)].map((_, i) => (
@@ -171,7 +177,9 @@ const ProjectShowcase = () => {
           </p>
         </motion.div>
       </div>
-    </section>
+    </section>      
+  </>
+    
   );
 };
 
